@@ -1,0 +1,35 @@
+
+<table>
+  
+    <tr>
+      
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Phone</th>
+      <th scope="col">Address</th>
+      <th scope="col">Adults</th>
+      <th scope="col">Children</th>
+      <th scope="col">or_date</th>
+      <th scope="col">Action</th>
+
+    </tr>
+
+    <tr *ngFor="let Tble of table">
+      <td>{{Tble.fnme}}</td>
+      <td>{{Tble.email}}</td>
+      <td>{{Tble.phone}}</td>
+      <td>{{Tble.address}}</td>
+      <td>{{Tble.adults}}</td>
+      <td>{{Tble.children}}</td>
+      <td>{{Tble.or_date}}</td>
+      <td>
+        <button type="button" class="btn btn-success">update</button>
+        <button (click)="deleteAirTicket(Tble.id)" type="button" class="btn btn-danger">delete</button>
+      </td>
+     
+    </tr>
+   
+   
+ 
+</table>
+<router-outlet></router-outlet>

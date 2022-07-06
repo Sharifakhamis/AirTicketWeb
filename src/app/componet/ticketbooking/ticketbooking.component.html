@@ -1,0 +1,51 @@
+<div class="container">
+  <form [formGroup]="CreateAirTicket" (ngSubmit)="submit()"> 
+    <div class="elem-group inlined">
+      <label for=" fnme">Your Name</label>
+      <input type="text" id="fnme" name="fnme" formControlName="fnme">
+    </div>
+    <div class="elem-group inlined">
+      <label for="email">Your E-mail</label>
+      <input type="email" id="email" name=" email" formControlName="email">
+    </div>
+    <div class="elem-group inlined">
+      <label for="phone">Your Phone</label>
+      <input type="tel" id="phone" name=" phone"formControlName="phone">
+    </div>
+    <div class="elem-group inlined">
+      <label for="address">Your Address</label>
+      <input type="text" id="address" name="address" formControlName="address">
+    </div>
+    <hr>
+    <div class="elem-group inlined">
+      <label for="adult">Adults</label>
+      <input type="number" id="adult" name=" adults" formControlName="adults">
+    </div>
+    <div class="elem-group inlined">
+      <label for="children">Children</label>
+      <input type="number" id="children" name="children" formControlName="children">
+    </div>
+    <div class="elem-group inlined">
+      <label for="or_date">Check-in Date</label>
+      <input type="date" id="or_date" name="or_date" formControlName="or_date">
+    </div>
+    <div class="elem-group inlined">
+      <label for="checkout-date">Check-out Date</label>
+      <input type="date" id="checkout-date" name="checkout">
+    </div>
+    <div class="elem-group">
+      <label for="room-selection">Select ticket Preference</label>
+      <select id="room-selection" name="room_preference">
+          <option value="">Choose the ticket from list</option>
+          <option value="connecting">KenyaAirways</option>
+          <option value="adjoining">AirTanzania</option>
+          <option value="adjacent">QatarAir</option>
+      </select>
+    </div> 
+    <button btn btn-lg btn-block tablebtn type="submit">SUBMIT</button>
+   
+  
+  
+  </form>
+</div>
+
